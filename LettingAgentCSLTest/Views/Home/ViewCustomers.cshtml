@@ -1,0 +1,43 @@
+﻿@model IEnumerable<LettingAgentCSLTest.Models.Customer>
+
+@{
+    ViewBag.Title = "ViewCustomers";
+}
+
+<h2>View Customers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "SignUp")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LasttName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LasttName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+        </td>
+     
+        
+    </tr>
+}
+
+</table>
