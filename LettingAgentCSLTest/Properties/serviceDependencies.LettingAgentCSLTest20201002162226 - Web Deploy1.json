@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "mssql1": {
-      "resourceId": null,
-      "type": "mssql.onprem",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/Microsoft.Sql/servers/lettingdbase/databases/LettingDBase",
+      "type": "mssql.azure",
       "connectionId": "LettingDBase",
       "secretStore": "AzureAppSettings"
     }
