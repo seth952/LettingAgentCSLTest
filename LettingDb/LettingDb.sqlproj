@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>LettingDBase</Name>
+    <Name>LettingDb</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{a491208f-304f-4f5d-9095-6ca9ce0a2b50}</ProjectGuid>
+    <ProjectGuid>{c602a20c-a997-4f0c-a80b-c219ca9451df}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>LettingDBase</RootNamespace>
-    <AssemblyName>LettingDBase</AssemblyName>
+    <RootNamespace>LettingDb</RootNamespace>
+    <AssemblyName>LettingDb</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -57,14 +57,9 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="dbo" />
-    <Folder Include="dbo\Tables" />
-    <Folder Include="Published\" />
+    <Folder Include="dbo\tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Customer.sql" />
-    <Build Include="dbo\Tables\House.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Published\LettingDBase.publish.xml" />
+    <Build Include="dbo\tables\Customer.sql" />
   </ItemGroup>
 </Project>
